@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaskMaster - Main Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h1 class="logo">TaskMaster</h1>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Task</a></li>
-      <li><a href="../kalender/index.html">Kalender</a></li>
-      <li><a href="../planning/index.html">Planning</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster - Main Page</title>
+    <link rel="stylesheet" href="Halaman utama/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1 class="logo">TaskMaster</h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Task</a></li>
+        <li><a href="kalender/index.html">Kalender</a></li>
+        <li><a href="planning/index.html">Planning</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Penjelasan singkat -->
-  <section class="intro">
-    <h2>Kelola Task Anda</h2>
-    <p>"TaskMaster hadir untuk bantu kamu menaklukkan hari-harimu. 
-      Buat daftar tugas, atur prioritas, dan rasakan kepuasan saat mencoret hal yang selesai. 
-      Dengan tampilan simpel dan fitur cerdas, 
-      TaskMaster adalah partner terbaik untuk produktivitasmu."</p>
-  </section>
+    <!-- Penjelasan singkat -->
+    <section class="intro">
+      <h2>Kelola Task Anda</h2>
+      <p>
+        "TaskMaster hadir untuk bantu kamu menaklukkan hari-harimu. Buat daftar
+        tugas, atur prioritas, dan rasakan kepuasan saat mencoret hal yang
+        selesai. Dengan tampilan simpel dan fitur cerdas, TaskMaster adalah
+        partner terbaik untuk produktivitasmu."
+      </p>
+    </section>
 
-  <!-- Form input -->
-  <section class="task-form">
-    <h3>Buat Task Baru</h3>
-    <form id="taskForm">
-      <label for="task">Task:</label>
-      <input type="text" id="task" placeholder="Contoh: Belajar JavaScript">
+    <!-- Form input -->
+    <section class="task-form">
+      <h3>Buat Task Baru</h3>
+      <form id="taskForm">
+        <label for="task">Task:</label>
+        <input type="text" id="task" placeholder="Contoh: Belajar JavaScript" />
 
-      <label for="date">Tanggal:</label>
-      <input type="date" id="date">
+        <label for="date">Tanggal:</label>
+        <input type="date" id="date" />
 
-      <button type="submit">Tambah</button>
-    </form>
-  </section>
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
 
-  <!-- Grid task -->
-  <section class="task-grid" id="taskGrid">
-    <!-- Task cards akan muncul di sini -->
-  </section>
+    <!-- Grid task -->
+    <section class="task-grid" id="taskGrid">
+      <!-- Task cards akan muncul di sini -->
+    </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <p>Hubungi kami di:</p>
-    <div class="socials">
-      <a href=""><img src="https://img.icons8.com/ios-filled/50/facebook.png" alt="fb"></a>
-      <a href=""><img src="https://img.icons8.com/ios-filled/50/twitter.png" alt="tw"></a>
-      <a href=""><img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="ig"></a>
-    </div>
-    <p>&copy; 2025 TaskMaster</p>
-  </footer>
+    <!-- Footer -->
+    <footer id="contact">
+      <p>Hubungi kami di:</p>
+      <div class="socials">
+        <a href=""
+          ><img
+            src="https://img.icons8.com/ios-filled/50/facebook.png"
+            alt="fb"
+        /></a>
+        <a href=""
+          ><img src="https://img.icons8.com/ios-filled/50/twitter.png" alt="tw"
+        /></a>
+        <a href=""
+          ><img
+            src="https://img.icons8.com/ios-filled/50/instagram-new.png"
+            alt="ig"
+        /></a>
+      </div>
+      <p>&copy; 2025 TaskMaster</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="Halaman utama/script.js"></script>
+  </body>
 </html>
