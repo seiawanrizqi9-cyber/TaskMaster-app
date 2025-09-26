@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ff9a3c,
+    #ffffff
+  ); /* Gradasi oranye ke putih */
+  color: #333;
+  min-height: 100vh;
+  display: flex; /* Mengaktifkan flexbox */
+  flex-direction: column; /* Mengatur item secara vertikal */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Menambah efek bayangan */
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar .nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 30px;
+}
+.intro p {
+  font-size: 1.1rem; /* Sedikit lebih besar */
+  font-style: italic; /* Membuat teks miring */
+  line-height: 1.6; /* Menambah jarak antar baris */
+  max-width: 600px; /* Membatasi lebar agar mudah dibaca */
+  margin: 0 auto; /* Menengahkan paragraf */
+}
+
+/* Task form */
+.task-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.task-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.task-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.task-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffce00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Task grid */
+.task-grid {
+  margin: 30px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  flex-grow: 1; /* Membuat grid ini tumbuh untuk mendorong footer ke bawah */
+}
+.task-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.task-card h4 {
+  margin-bottom: 5px;
+}
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.task-actions .star {
+  color: #584600;
+}
+.task-actions .done {
+  color: #0f0;
+}
+.task-actions .delete {
+  color: #f33;
+}
+
+/* Footer */
+footer {
+  margin-top: auto; /* Mendorong footer ke bawah */
+  padding: 20px;
+  text-align: center;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Sedikit penyesuaian agar cocok dengan navbar */
+}
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .task-form {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column; /* Mengubah navbar menjadi tata letak vertikal */
+    gap: 15px; /* Menambah jarak antara judul dan link */
+  }
+
+  .navbar .logo {
+    text-align: center; /* Memastikan judul berada di tengah */
+  }
+}

@@ -1,0 +1,101 @@
+/* Container Utama */
+.calendar-container {
+  width: 90%;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+/* Header Kalender (Pilihan Bulan & Tahun) */
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.calendar-header select {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Grid Kalender */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 kolom untuk 7 hari */
+  gap: 5px;
+}
+
+.day-name,
+.date-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 8px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-name {
+  font-weight: bold;
+  text-align: center;
+  min-height: auto; /* Tinggi otomatis untuk nama hari */
+}
+
+.date-box .date-number {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date-box.other-month .date-number {
+  opacity: 0.4; /* Redupkan tanggal dari bulan lain */
+}
+
+.date-box ul {
+  list-style: none;
+  padding-left: 5px;
+  font-size: 0.8rem;
+  flex-grow: 1;
+}
+
+.date-box li {
+  background: rgba(255, 206, 0, 0.3);
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-top: 3px;
+  word-break: break-word;
+  /* Menjadikan item sebagai flex container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-task-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  line-height: 1;
+  color: #c0392b;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .calendar-grid {
+    /* Mengubah menjadi 3 kolom seperti permintaan */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .day-name {
+    display: none; /* Sembunyikan nama hari di layar kecil */
+  }
+}

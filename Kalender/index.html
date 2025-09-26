@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalender - TaskMaster</title>
+    <link rel="stylesheet" href="../Halaman utama/style.css" />
+    <!-- CSS khusus untuk halaman kalender -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar (Sama seperti halaman utama) -->
+    <nav class="navbar">
+      <h1 class="logo">TaskMaster</h1>
+      <ul class="nav-links">
+        <li><a href="../Halaman utama/index.html">Task</a></li>
+        <li><a href="index.html" class="active">Kalender</a></li>
+        <li><a href="../planning/index.html">Planning</a></li>
+        <li><a href="../Halaman utama/index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Konten Kalender -->
+    <main class="calendar-container">
+      <div class="calendar-header">
+        <select id="month-select"></select>
+        <select id="year-select"></select>
+      </div>
+      <div class="calendar-grid" id="calendarGrid">
+        <!-- Hari dalam seminggu -->
+        <div class="day-name">Min</div>
+        <div class="day-name">Sen</div>
+        <div class="day-name">Sel</div>
+        <div class="day-name">Rab</div>
+        <div class="day-name">Kam</div>
+        <div class="day-name">Jum</div>
+        <div class="day-name">Sab</div>
+        <!-- Kotak tanggal akan dibuat oleh JavaScript -->
+      </div>
+    </main>
+
+    <!-- Footer (Sama seperti halaman utama) -->
+    <footer id="contact">
+      <p>&copy; 2025 TaskMaster</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
